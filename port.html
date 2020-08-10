@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--using-fontAwesome------------------->
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section>
+        <!--navigation------------>
+        <nav>
+            <!--logo-->
+            <a href="#" class="logo">DR</a>
+            <!--menu-->
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                
+
+            </ul>
+            <!--bars------------------------>
+            <div class="toggle"></div>
+        </nav>
+        <!--text-------------------------->
+        <div class="text-container">
+            <p>Hello</p>
+            <p>I'm Deepali Raje Rathore</p>
+            <p>I am student of IIIT Bhopal</p>
+            <a href="http://127.0.0.1:5500/cv.html">
+                <button class="down-cv">Download CV</button>
+            </a>
+        </div>
+        <!--model----------------------------->
+        <img src="img1.png" class="model" alt="model">
+    </section>
+    <section id="about" class="about">
+        <!--about-section------------------------------------------>
+
+        <div class="about-container">
+            <!--img-------------------------------->
+            <img src="img2.jpg">
+            <!--about-text--------------------------------->
+            <div class="about-text">
+                <p>About Me</p>
+                <p>student</p>
+                <p>I'm student of IIIT Bhopal persuing B.tech 3rd year. My branch is Information Technology.</p>
+                <!--button------------------------->
+                <a href="http://127.0.0.1:5500/cv.html">
+                    <button>Download CV</button>
+                </a>
+            </div>
+
+        </div>
+    </section>
+    <section id="projects" class="projects">
+    <!--Projects-section--------------------------------------------->
+    <div class="projects">
+        <!--text---------------------------------->
+        <div class="projects-text">
+            <p>Projects</p>
+            <p>Currently working on some projects</p>
+            <a href="https://github.com/deepali0411">
+                <button>Git-hub profile</button>
+            </a>
+        </div>
+    </div>
+    </section>
+    <!--footer------------------------>
+    <footer>
+        <p>Contact-Me</p>
+        <p>Email: deepalirathore0411@gmail.com</p>
+        <!--social------------------------->
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <!--JQuery----------------------->
+        <script type="text/javascript" src="js/JQuery.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.toggle').click(function () {
+                    $('.nav').toggleClass('active')
+                })
+            })
+        </script>
+        <!--copyright----------->
+        <p class="copyright">Copyright by DR</p>
+    </footer>
+</body>
+
+</html>
